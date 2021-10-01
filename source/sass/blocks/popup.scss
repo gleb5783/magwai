@@ -26,6 +26,11 @@
     background-repeat: no-repeat;
     background-position: -56px;
 
+    @media (min-resolution: 2dppx) {
+        background-image: url('../../img/moon@2x.png');
+        background-size: contain;
+    }
+
     @media (max-width: 1441px) {
         background-position: center;
         background-size: cover;
