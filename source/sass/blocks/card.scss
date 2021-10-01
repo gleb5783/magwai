@@ -1,0 +1,159 @@
+.card {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card__heading {
+    text-transform: uppercase;
+    color: $white;
+    font-size: 42px;
+    line-height: 51px;
+    margin: 53px 0;
+}
+
+.card__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    justify-content: center;
+    padding: 0;
+}
+
+.card__item {
+    margin-bottom: 30px;
+    width: 100%; 
+    max-width: 320px;
+    min-height: 621px;
+    background-color: $white;
+    margin-right: 20px;
+
+    @media (max-width: 767px) {
+        max-width: 280px;
+
+        & img {
+            width: 280px;
+        }
+    }
+
+    @media (max-width: 619px) {
+        margin: 0;
+    }
+}
+
+.card__item h3 {
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: $light-black;
+    margin: 25px 0 20px;
+    padding: 0 23px;
+}
+
+.card__item h4 {
+    font-size: 16px;
+    line-height: 26px;
+    color: $light-black;
+    padding: 0 23px;
+}
+
+.card__item p {
+    color: $light-grey;
+    padding: 0 23px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.card__item span {
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0 23px;
+}
+
+.card__btn {
+    background-color: $light-black;
+    width: 272px;
+    min-height: 50px;
+    margin: 25px auto 30px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: $white;
+
+    &:hover {
+        background-color: rgba($light-black, 0.8);
+    }
+
+    &:active {
+        background-color: $light-black;
+    }
+}
+
+.card__btn-wrapper {
+    width: 100%;
+    min-height: 316px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+.card__load-more-btn {
+    font-family: 'Montserrat';
+    cursor: pointer;
+    position: relative;
+    transform: skewX(-17deg);
+    background-color: $btn;
+    width: 282px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border: none;
+    text-transform: uppercase;
+    color: $white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 150%;
+
+    & span {
+        transform: skewX(17deg);
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 60px;
+        background-color: $white;
+        right: -10px;
+        top: 0;
+        position: absolute;
+    }
+
+    &:hover {
+        background-color: $btn-hover;
+    }
+
+    &:active {
+        background-color: $btn-hover;
+        opacity: 0.8;
+    }
+
+    @media (max-width: 767px) {
+        width: 260px;
+    }
+}
