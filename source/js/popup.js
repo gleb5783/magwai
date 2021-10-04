@@ -3,7 +3,7 @@ const ESCAPE_BUTTON = 'Escape';
 const popup = document.querySelector('.popup');
 const body = document.querySelector('.body');
 const closePopupBtn = document.querySelector('.popup__close-btn');
-const applicationBtn = document.querySelectorAll('#application');
+const applicationBtn = document.querySelectorAll('.btn-application');
 
 function tabIndexOn () {
     document.querySelectorAll('*').forEach((el) => el.setAttribute('tabindex', '-1'));
