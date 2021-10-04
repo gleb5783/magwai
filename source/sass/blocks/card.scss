@@ -23,7 +23,9 @@
 }
 
 .card__item {
+    position: relative;
     margin-bottom: 30px;
+    padding-bottom: 150px;
     width: 100%; 
     max-width: 320px;
     min-height: 621px;
@@ -39,7 +41,7 @@
     }
 
     @media (max-width: 619px) {
-        margin: 0;
+        margin: 0 0 20px;
     }
 }
 
@@ -98,6 +100,14 @@
     &:active {
         background-color: $light-black;
     }
+}
+
+.card__btn-position {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .card__btn-wrapper {
